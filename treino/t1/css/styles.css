@@ -9,7 +9,7 @@ body{
     height: 100vh;
 }
 
-@media(max-width: 450px){
+@media(max-width: 1000px){
     
     #tudo{
         width: 100%;
