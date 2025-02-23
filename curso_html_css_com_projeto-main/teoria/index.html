@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intensivao HTML e CSS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>
+        Esse aqui basicamente é o cabeçalho, no sentido de word mesmo. Tem outros cabeçalhos também. Por convenção, o ideal é termos um h1 por página
+    </h1>
+
+    <p>
+        Isso é um parágrafo. O texto mesmo.
+    </p>
+
+    <h2>
+        Esse é um segundo cabeçalho, ou melhor, um outro título. Podemos ver como subtítulo do primeiro. As tags em html devem ser escolhidas com base em seu propósito, isso é importante.
+    </h2>
+
+    <p>
+        Mais um texto, essa será uma das tags que mais usaremos. 
+    </p>
+
+    <a class="links" href="https://www.google.com.br/?hl=pt-BR"> O a é a tag de redirecionamento</a>
+
+    <hr> <!-- Essa tag, hr, é um delimitador, basicamente faz uma linha mesmo-->
+
+
+    <hr>
+    <img src="img/meteoro.jpg" alt="Céu estrelado">
+    <hr>
+    <img src="https://m.media-amazon.com/images/S/pv-target-images/99fa5db6db0f04676a7cd689a429bfe12be345b034c29185a13e4324cef85787._SX1080_FMjpg_.jpg" alt="Madagascar"> <!--Também podemos colocar o link de imagens de outros sites-->
+    <hr>
+    <p style="color: red">Esse é um parágrafo com algum texto na cor vermelha</p>
+
+    <div>
+        <p>Muito usada, a div é o início de um conteiner, por enquanto não sei muito bem como usar ela</p>
+    </div>
+
+    <table> <!-- Tabelas servem para mostrar informação, talvez existam formas mais eficientes -->
+        <thead> <!-- cabeçalho da table -->
+            <tr> <!--tr é table rows, ou seja, linhas, cada linha começa com um th-->
+                <th> <!-- nome da coluna, ou título da coluna -->
+                    ID:
+                </th>
+                <th>
+                    Nome
+                </th>
+            </tr>
+            <tbody> <!-- Aqui inserimos os dados da tabela -->
+                <tr>
+                    <td>1</td> <!-- td vem de table data -->
+                    <td>Matheus</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Mascarini</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Luiz G</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+
+    <ul> <!-- Esse aqui serve para fazer listas com bolinhas-->
+        <li>
+            Cafeína
+        </li>
+        <li>
+            Testosterona
+        </li>
+        <li>
+            Mexerica
+        </li>
+    </ul>
+
+    <ol> <!-- Esse serve para fazer listas também, mas enumeradas -->
+        <li>
+            Escola
+        </li>
+        <li>
+            Colégio
+        </li>
+        <li>
+            Faculdade
+        </li>
+    </ol>
+
+    <!-- -------------------------------------------------------------- -->
+
+    <!-- COMPORTAMENTOS -->
+
+    <!-- Block -> Esse comportamento significa que a separação dos itens é por "conteiner", ou seja, não é continua na mesma linha -->
+    <p>
+        Parágrafos possuem <p>
+            Comportamento de bloco
+        </p>
+    </p>
+
+    <p style="color: darkgreen">
+        O que é diferente do span que
+            <span>possui comportamento de linha</span>
+    </p>
+
+    <div id="um" class="class_de_divs class_random"> <!-- Podemos ter mais de uma classe por div, basta colocar uma do lado da outra dentro das aspas duplas da class -->
+        <p>
+            à partir do id eu consigo alterar com alta especificidade as caracteristicas de um item
+        </p>
+    </div>
+
+    <div class="class_de_divs class_random">
+        <p>
+            Essa é uma segunda div
+        </p>
+    </div>
+
+    <div class="class_de_divs class_random">
+        <p>
+            Essa é uma terceira div
+        </p>
+    </div>
+    <hr>
+
+    <div ip="mae" class="div_mae">
+        <div class="div_filha">
+            <p>
+                Div 1
+            </p>
+        </div>
+        <div class="div_filha">
+            <p>
+                Div 2
+            </p>
+        </div>
+        <div class="div_filha">
+            <p>
+                Div 3
+            </p>
+        </div>
+    </div>
+
+<hr>
+
+    <!-- Cores -->
+    <div id="cores">
+        <div id="rgb">
+            um
+        </div>
+        <div id="hsl">
+            dois
+        </div>
+        <div id="hex">
+            tres
+        </div>
+
+    </div>
+    <hr>
+
+    <hr>
+    <!-- Alihamento de texto -->
+
+    <div id="center">
+        <p>
+            Maracutaia
+        </p>
+        <p>
+
+            Albatroz
+
+        </p>
+    </div>
+<hr>
+   <!-- Text decoration-->
+    <div id="underline">
+        <p>Algum texto para underline</p>
+    </div>
+
+    <div id="through">
+        <p>Algum texto para ser riscado</p>
+    </div>
+    <div>
+        <a class="links" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Prepare-se para o rickroll!!!</a>
+
+    </div>
+    <hr>
+
+    <!-- Transformação de texto -->
+    <div id="uppercase">
+        <p>
+            Texto em caixa alta
+        </p>
+    </div>
+
+    <div id="lowercase"> 
+        <p>
+            Texto em caixa baixa
+        </p>
+    </div>
+
+    <!-- Alguns exemplos de fontes -->
+    <div id="tamanho-fonte">
+        <div id="sarif">
+            <p>
+                Texto sarifado
+            </p>
+        </div>
+        <div id="sans-sarif">
+            <p>
+                Texto não sarifado
+            </p>
+        </div>
+        <div id="cursive">
+            <p>
+                Texto cursivo
+            </p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- display / Podemos alterar o funcionamento da tag para ser bloco ou inline: -->
+
+    <div id="inline">
+
+        <div class="bloquinho">
+            <p>Um</p>
+        </div>
+        <div class="bloquinho">
+            <p>dois</p>
+        </div>
+        <div class="bloquinho">
+            <p>Tres</p>
+        </div>
+        <p class="texto">É</p>
+        <p class="texto">necesário</p>
+        <p class="texto">levar em conta</p>
+        <p class="texto">o</p>
+        <p class="texto">display</p>
+        <p class="texto">original</p>
+
+    </div>
+    <hr>
+
+    <div id="bloco">
+
+        <div class="bloquinho2">
+            <p>Um</p>
+        </div>
+        <div class="bloquinho2">
+            <p>dois</p>
+        </div>
+        <div class="bloquinho2">
+            <p>Tres</p>
+        </div>
+        <span class="span">Texto</span>
+        <span class="span">que</span>
+        <span class="span">deveria</span>
+        <span class="span">estar</span>
+        <span class="span">na</span>
+        <span class="span">mesma</span>
+        <span class="span">linha</span>
+        <p id="oculto">
+            Este texto será oculto
+        </p>
+        
+
+    </div>
+
+    <hr>
+
+    <!-- Relative me permite usar top, left, right, bottom, em relação a posição original dela -->
+
+    <div id="relative">
+        <div>
+            <p>
+                Algum texto
+            </p>
+        </div>
+    </div>
+
+    <!-- Já absolute me permite movimentar o objeto com relação a posição absoluta dela erm relação ao pai tela usando top. left, right e bottom -->
+
+    <div id="absolute">
+        <div>
+            <p>
+                Posicionamento absoluto
+            </p>
+        </div>
+
+    </div>
+
+    <div id="quadrado">
+        <div id="f1" class="filhote"></div>
+        <div id="f2" class="filhote"></div>
+        <div id="f3" class="filhote"></div>
+        <div id="f4" class="filhote"></div>
+    </div>
+
+    <hr>
+
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+h1{ /* As tags possuem maior especificidade que o body */
+    color: blue;
+}
+
+body{ /*  Pouca especificidade */
+    padding-bottom: 500px;    
+}
+
+h2{ 
+    color: purple;
+}
+
+h1{ /* Configuração de multiplas tags */
+    color: white;
+    background-image: url("../img/meteoro.jpg");
+    padding-bottom: 15px;
+}
+
+
+#um{ /* Altíssima especificidade*/
+    color:aquamarine;
+}
+
+.class_de_divs{ /* Especificidade maior que das tags*/
+    color: red;
+}
+
+.class_random{
+    font: 25px;
+    padding-bottom: 1px;
+    background-color: black;
+}
+
+.div_mae{
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 3px;
+    border: 1px dashed white;
+    vertical-align: auto;
+
+}
+
+.div_filha{
+    color: white;
+    width: 80px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+    /*padding: 2px;*/
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+#cores{
+    height: 150px;
+    width: 150px;
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+#hsl, #rgb, #hex{
+    height: 40px;
+    width: 80px;
+    margin: 5px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+}
+
+#hex{
+    background-color: #23a2ef;
+}
+
+#rgb{
+    background-color: rgb(70, 20, 80);
+}
+
+#hsl{ /* hue = qual cor, s = saturação (quão distante de cinza), l = lightness (quanta luz, 50% não tem luz nem escuridão) */
+    background-color: hsl(267, 80%, 50%);
+}
+
+#center{
+    text-align: center;
+}
+
+#underline{
+    text-decoration: underline;
+}
+
+#through{
+    text-decoration: line-through;
+}
+
+.links{
+    text-decoration: none;
+}
+
+#uppercase{
+    text-transform: uppercase;
+}
+
+#lowercase{
+    text-transform: lowercase;
+}
+
+#tamanho-fonte{
+    font-size: 20pt;
+}
+
+#sarif{
+    font-family: Georgia;
+}
+
+#sans-sarif{
+    font-family: Helvetica;
+}
+
+#cursive{
+    font-family: cursive;
+}
+
+#inline{
+    /*display: inline;*/
+    width: 180px;
+    height: 180px;
+    background-color: black;
+    color: black;
+    padding: 5px;
+}
+
+#bloco{
+    /*display: block;*/
+    width: 180px;
+    height: 300px;
+    background-color: black;
+    color: black;
+    padding: 5px;
+}
+
+/*
+
+É necessário especificar o tipo de mudança levando em consideração o display original da tag
+
+*/
+
+.bloquinho{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+}
+
+.bloquinho2{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.texto{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    color: white;
+}
+
+.span{
+    display: block;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+}
+
+#oculto{
+    display: none;
+}
+
+#relative{
+    width: 40px;
+    height: 100px;
+    background-color: black;
+    color: green;
+    margin: 10px;
+    position: relative;
+    left: 25px;
+
+} 
+
+#absolute{
+    width: 120px;
+    height: fit-content;
+    background-color: red;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+#quadrado{
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    position: fixed;
+    padding: 5px;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+.filhote{
+    height: 40px;
+    width: 40px;
+    border: 1px solid red;
+    border-radius: 5px;
+    position: absolute;
+    margin: 5px;
+    /*display: inline-block;*/
+}
+
+#f1{
+    top:  0px;
+    left: 0px;
+}
+
+#f2{
+    top:   0px;
+    right: 0px;
+}
+
+#f3{
+    bottom: 0px;
+    left:   0px;
+}
+
+#f4{
+    bottom: 0px;
+    right:  0px;
+}
