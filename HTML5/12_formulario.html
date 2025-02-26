@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- method é o tipo de trabalho de dados, pode ser GET ou POST -->
+     <!-- action é a lógica para o envio / resgate dos dados, a função -->
+    <form action="">
+
+        <!-- label é a descrição de um campo de dados -->
+        <!-- for é boa prática, linka o label com o campo -->
+         <div>
+             <label for="nome">
+                 Nome do usuário
+             </label>
+            
+             
+             <!-- Placeholder é o textinho que fica dentro do campo de dados -->
+              <!-- required obriga o preenchimento do campo -->
+             <input type="text" id="nome" placeholder="Insira o nome do usuário" required>
+        </div>
+        <div>
+            <label for="idade">Insira idade</label>
+            <input type="number" placeholder="Insira idade" min="0" max="130">
+        </div>
+        <!-- Para enviar os dados -->
+        <input type="submit" value="Enviar">
+             
+    </form>
+</body>
+</html>
