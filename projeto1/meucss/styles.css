@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0;
+}
+
+header{
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#weDesignHeader{
+    left: 50px;
+    position: relative;
+}
+
+#navbarHeader{
+    position: relative;
+    display: inline-block;
+}
+
+#aberturaSite{
+    
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    h1{
+        position: relative;
+        align-self: center;
+    }
+
+    p{
+        position: absolute;
+    }
+
+}
